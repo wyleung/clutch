@@ -1,4 +1,5 @@
-from typing import TypedDict, Literal, Sequence, Union, TypeVar
+from typing import Sequence, Union, TypeVar
+from typing_extensions import Literal, TypedDict
 
 from clutch.network.rpc.typing import TrackerReplace
 

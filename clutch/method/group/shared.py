@@ -1,4 +1,5 @@
-from typing import Mapping, Optional, Protocol, TypeVar, FrozenSet
+from typing import Mapping, Optional, TypeVar, FrozenSet
+from typing_extensions import Protocol
 
 from clutch.method.convert.argument.torrent import convert_arguments
 from clutch.network.rpc.message import Request

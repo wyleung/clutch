@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from typing import TypedDict, Literal, Sequence, Union
-
+from typing import Sequence, Union
+from typing_extensions import Literal, TypedDict
 
 @dataclass
 class Cookie:

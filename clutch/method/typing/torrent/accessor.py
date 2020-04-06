@@ -1,5 +1,5 @@
-from typing import TypedDict, Literal, Set, Sequence, Union, Mapping
-
+from typing import Set, Sequence, Union, Mapping
+from typing_extensions import Literal, TypedDict
 from clutch.method.typing.torrent.action import IdsArg
 
 AccessorField = Literal[

@@ -66,6 +66,7 @@ def process_torrent_objects(
     torrents_value: Sequence[Mapping[str, object]], processors: Mapping[str, Callable]
 ) -> TorrentAccessorResponse:
     result: List[Mapping[str, object]] = []
+    print(f"torrentvalues: {torrents_value}")
     for torrent in torrents_value:
         new_torrent = {}
         for (key, value) in torrent.items():

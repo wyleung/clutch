@@ -10,9 +10,12 @@ license = "MIT"
 packages = [{ include = "clutch" }]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "~3.6.0"
 requests = "^2.22.0"
 mypy = "^0.761"
+dataclasses = "^0.7"
+typing = "^3.7.4"
+typing_extensions = "^3.7.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"

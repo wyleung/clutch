@@ -1,5 +1,4 @@
-from typing import TypedDict
-
+from typing_extensions import TypedDict
 
 class Stats(TypedDict):
     uploaded_bytes: int

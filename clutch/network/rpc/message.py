@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import TypedDict, Mapping, Any, TypeVar, Generic
+from typing import Mapping, Any, TypeVar, Generic
+from typing_extensions import TypedDict
 
 T = TypeVar("T", bound=Mapping[str, object])
 

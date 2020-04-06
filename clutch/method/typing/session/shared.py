@@ -1,5 +1,5 @@
-from typing import TypedDict, Tuple, Literal
-
+from typing import Tuple
+from typing_extensions import Literal, TypedDict
 
 DataRateUnits = Tuple[
     Literal["KB/s"], Literal["MB/s"], Literal["GB/s"], Literal["TB/s"]

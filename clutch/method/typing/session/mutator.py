@@ -1,4 +1,5 @@
-from typing import TypedDict, Literal
+
+from typing_extensions import Literal, TypedDict
 
 from clutch.method.typing.session.shared import Units
 

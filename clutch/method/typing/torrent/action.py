@@ -1,5 +1,6 @@
 from enum import unique, Enum
-from typing import TypedDict, Union, Sequence, Literal
+from typing import Union, Sequence
+from typing_extensions import Literal, TypedDict
 
 IdsArg = Union[int, Sequence[Union[str, int]], Literal["recently_active"]]
 

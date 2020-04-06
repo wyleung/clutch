@@ -16,9 +16,12 @@ def convert_response(
         result=received.result, arguments=callback(received.arguments), tag=received.tag
     )
 
+def camel_case_split(identifier):
+    matches = re.finditer('.+?(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|$)', identifier)
+    return [m.group(0) for m in matches]
 
 def convert_key(key: str) -> str:
-    camelcase_split = re.split(r"(?<=[a-z])(?=[A-Z])", key)
+    camelcase_split = camel_case_split(key)
     hyphen_split = key.split("-")
     if len(camelcase_split) > 1:
         return "_".join([word.lower() for word in camelcase_split])
